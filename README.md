@@ -1,6 +1,9 @@
 # SVM-Object-Detection
 Train a SVM and for detecting human upper bodies in TV series The Big Bang Theory.
 
+To detect human upper bodies in images, a classifier is developed that can distinguish between upper-body
+image patches from non-upper-body patches. To train such a classifier, we can use SVMs. 
+
 ## Data
 The training data is typically a set of images with bounding boxes of the upper bodies. Positive training examples are image patches extracted at the annotated locations. A negative training example can be any image patch that does not significantly overlap with the annotated upper bodies. Thus there potentially many more negative training examples than positive training examples. 
 
